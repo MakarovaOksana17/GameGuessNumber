@@ -58,7 +58,7 @@ namespace GuessNumberGame
                 count++;
                 substring.Append($"Попытка №{count}: ");
                 PlayerNumber player = new PlayerNumber(txtResponse.Text);
-                CalculateNumber calculate = new CalculateNumber(player, rnd, numberAttempt.countAttempt);
+                CalculateNumber calculate = new CalculateNumber(player, rnd);
 
                 if (calculate.isMaxValue())
                 {
@@ -99,6 +99,11 @@ namespace GuessNumberGame
             txtTo.Text = string.Empty;
             txtResponse.Text = string.Empty;
             rTB.Text = string.Empty;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Это игра с угадыванием.Вы задаете диапазон чисел и количество попыток и угадываете число, которые загадал компьютер из этого диапазона. Игра идет до конца введеных попыток", "Правила", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

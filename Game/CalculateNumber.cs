@@ -13,11 +13,9 @@ namespace GuessNumberGame.Game
         IPlayer _player;
         int _playerNumber;
         int _randomValue;
-        int _countAttempt;
 
-        public CalculateNumber(IPlayer player, int randomValue, int countAttempt)
+        public CalculateNumber(IPlayer player, int randomValue)
         {
-            _countAttempt = countAttempt;
             _player = player;
             _playerNumber = (int)_player.getValue();
             _randomValue = randomValue;

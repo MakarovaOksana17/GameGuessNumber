@@ -17,7 +17,6 @@ namespace GuessNumberGame.SettingsGame
 
         public object Rand()
         {
-
             return _random.getRandomValue();
         }
     }

@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtAttempt = new System.Windows.Forms.MaskedTextBox();
+            this.txtTo = new System.Windows.Forms.MaskedTextBox();
+            this.txtFrom = new System.Windows.Forms.MaskedTextBox();
             this.btnSpecify = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtResponse = new System.Windows.Forms.MaskedTextBox();
             this.btnResponse = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.rTB = new System.Windows.Forms.RichTextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.txtFrom = new System.Windows.Forms.MaskedTextBox();
-            this.txtTo = new System.Windows.Forms.MaskedTextBox();
-            this.txtAttempt = new System.Windows.Forms.MaskedTextBox();
-            this.txtResponse = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(310, 93);
             this.panel1.TabIndex = 0;
+            // 
+            // txtAttempt
+            // 
+            this.txtAttempt.Location = new System.Drawing.Point(143, 52);
+            this.txtAttempt.Mask = "00000";
+            this.txtAttempt.Name = "txtAttempt";
+            this.txtAttempt.Size = new System.Drawing.Size(56, 20);
+            this.txtAttempt.TabIndex = 7;
+            // 
+            // txtTo
+            // 
+            this.txtTo.Location = new System.Drawing.Point(222, 18);
+            this.txtTo.Mask = "00000";
+            this.txtTo.Name = "txtTo";
+            this.txtTo.Size = new System.Drawing.Size(56, 20);
+            this.txtTo.TabIndex = 6;
+            // 
+            // txtFrom
+            // 
+            this.txtFrom.Location = new System.Drawing.Point(139, 15);
+            this.txtFrom.Mask = "00000";
+            this.txtFrom.Name = "txtFrom";
+            this.txtFrom.Size = new System.Drawing.Size(56, 20);
+            this.txtFrom.TabIndex = 5;
             // 
             // btnSpecify
             // 
@@ -106,6 +130,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Правила";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel2
             // 
@@ -116,6 +141,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(310, 59);
             this.panel2.TabIndex = 4;
+            // 
+            // txtResponse
+            // 
+            this.txtResponse.Location = new System.Drawing.Point(115, 15);
+            this.txtResponse.Mask = "00000";
+            this.txtResponse.Name = "txtResponse";
+            this.txtResponse.Size = new System.Drawing.Size(80, 20);
+            this.txtResponse.TabIndex = 8;
             // 
             // btnResponse
             // 
@@ -153,38 +186,6 @@
             this.button3.Text = "Новая игра";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // txtFrom
-            // 
-            this.txtFrom.Location = new System.Drawing.Point(139, 15);
-            this.txtFrom.Mask = "00000";
-            this.txtFrom.Name = "txtFrom";
-            this.txtFrom.Size = new System.Drawing.Size(56, 20);
-            this.txtFrom.TabIndex = 5;
-            // 
-            // txtTo
-            // 
-            this.txtTo.Location = new System.Drawing.Point(222, 18);
-            this.txtTo.Mask = "00000";
-            this.txtTo.Name = "txtTo";
-            this.txtTo.Size = new System.Drawing.Size(56, 20);
-            this.txtTo.TabIndex = 6;
-            // 
-            // txtAttempt
-            // 
-            this.txtAttempt.Location = new System.Drawing.Point(143, 52);
-            this.txtAttempt.Mask = "00000";
-            this.txtAttempt.Name = "txtAttempt";
-            this.txtAttempt.Size = new System.Drawing.Size(56, 20);
-            this.txtAttempt.TabIndex = 7;
-            // 
-            // txtResponse
-            // 
-            this.txtResponse.Location = new System.Drawing.Point(115, 15);
-            this.txtResponse.Mask = "00000";
-            this.txtResponse.Name = "txtResponse";
-            this.txtResponse.Size = new System.Drawing.Size(80, 20);
-            this.txtResponse.TabIndex = 8;
             // 
             // Form1
             // 
